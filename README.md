@@ -8,6 +8,7 @@ When you have got in here, put a hyphen (-) and then your name in the space belo
 - Tristan is now here?
 - sharon
 - Ryan
+- Sean
 
 
 
