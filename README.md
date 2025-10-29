@@ -11,6 +11,7 @@ When you have got in here, put a hyphen (-) and then your name in the space belo
 - Ryan
 - Sean
 - Peter
+- hiroto
 
 
 Then make a file that a class of your own in it. Choose a very obscure class to 
