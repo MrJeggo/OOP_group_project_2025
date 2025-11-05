@@ -1,4 +1,4 @@
-from teachers import Teacher
+# from teachers import Teacher
 # from player import item_list
 from Game import Game 
 from Item import Item
@@ -8,7 +8,7 @@ class Room():
         self.room_num = room_num
         self.is_lock = is_lock
         self.room_direction = room_direction
-        self.teacher_inside = Teacher.teacher_inside
+        # self.teacher_inside = Teacher.teacher_inside
         self.item_inside = Item.item_inside
         self.room_description = room_direction
         self.is_shop = is_shop
