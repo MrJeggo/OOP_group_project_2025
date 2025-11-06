@@ -14,7 +14,7 @@ class teacher:
         
     def resethealth(self):
         if Player.is_dead() == True: 
-            Player self.health = self._maxhealth
+            self.health = self._maxhealth
   
     def getName(self):
         return self._name
