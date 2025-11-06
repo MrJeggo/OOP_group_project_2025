@@ -28,7 +28,7 @@ class Player:
         reduction_percent = round(reduction * 100, 1)
         print(f"Your confidence is now {self.confidence}.")
         print(f"Resulting in a damage reduction of: {reduction_percent}%")
-        
+
     def show_inventory(self):
         if not self.inventory:
             print("Inventory is empty.")
@@ -36,4 +36,14 @@ class Player:
         print("🧳 Inventory:")
         for item, qty in self.inventory.items():
             print(f" - {item}: {qty}")
+
+    def add_inventory(self, item, quantity):
+        self.inventory.append(item)
+
+    def test():
+        pass
+
+
+
+        
     
