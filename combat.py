@@ -1,5 +1,4 @@
-import Item
-import teacher
+from teachers import teacher
 class Combat: 
     def playerattack():
         pass
