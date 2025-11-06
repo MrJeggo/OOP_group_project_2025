@@ -14,7 +14,7 @@ class teacher:
     def getName(self):
         return self._name
     
-    def getName(self):
+    def getSubject(self):
         return self.subject
     
     # heeeee
