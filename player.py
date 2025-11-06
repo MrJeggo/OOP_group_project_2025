@@ -29,11 +29,32 @@ class Player:
         print(f"Your confidence is now {self.confidence}.")
         print(f"Resulting in a damage reduction of: {reduction_percent}%")
         
+
     def show_inventory(self):
         if not self.inventory:
             print("Inventory is empty.")
             return
         print("🧳 Inventory:")
-        for item, qty in self.inventory.items():
-            print(f" - {item}: {qty}")
+        for item_obj, count in self.inventory:
+            print(f" - {item_obj.name} (x{count})")
+
+    def add_inventory(self, item, quantity):
+        for entry in self.inventory:
+            if entry[0].name == item.name:
+                entry[1] += quantity
+                break
+        else:
+            self.inventory.append([item, quantity])
+        print(f"Added {quantity}x {item.name} to inventory.")
+
+    def remove_inventory(self, item, quantity):
+        for entry in self.inventory:
+            if entry[0].name == item.name:
+                entry[1] -= quantity
+                if entry[1] <= 0:
+                    self.inventory.remove(entry)
+                print(f"Removed {quantity}x {item.name}.")
+                break
+        else:
+            print(f"{item.name} not found in inventory.")
     
