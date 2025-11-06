@@ -24,30 +24,16 @@ class Miscellaneous(Item):
 
 # here be items matey
 
-pencil = Weapon()
-pencil.name = "unsharpend pencil"
-pencil.description = "you dealt 10 damage not great not terrible"
-pencil.effective_against = []
-pencil.attack_power = 10
-pencil.ineffective_against = []
+pencil = Weapon("unsharpend pencil","you dealt 10 damage not great not terrible",10,[],[])
 
-sharpend_pencil = Weapon()
-sharpend_pencil.name = "pencil"
-sharpend_pencil.description = "you dealt 15 damage better than 10"
-sharpend_pencil.effective_against = []
-sharpend_pencil.attack_power = 15
-sharpend_pencil.ineffective_against = []
 
-pencil_sharperner = Miscellaneous()
-pencil_sharperner.name = "pencil sharperner"
-pencil_sharperner.description = "everyone knows what a pencil sharperner does"
+sharpend_pencil = Weapon("pencil","you dealt 15 damage better than 10",15,[],[])
 
-popcorn = Consumable()
-popcorn.name = "pocorn kernal"
-popcorn.description = "you ate the kernal you gain 5 health"
-popcorn.heal_amount = 1
 
-apple = Consumable()
-apple.name = "apple"
-apple.description = "an apple a day just gave you 50 health"
-apple.heal_amount = 50
+pencil_sharperner = Miscellaneous("pencil sharperner","everyone knows what a pencil sharperner does")
+
+
+popcorn = Consumable("pocorn kernal","you ate the kernal you gain 5 health",5)
+
+
+apple = Consumable("apple","an apple a day just gave you 50 health",50)
