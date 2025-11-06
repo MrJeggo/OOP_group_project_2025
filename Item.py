@@ -25,6 +25,7 @@ class Miscellaneous(Item):
 # here be items matey
 
 # weapons stored here
+# Please add the effective against and ineffective against when you are adding the bosses
 
 pencil = Weapon("unsharpend pencil","you dealt 10 damage not great not terrible",10,[],[])
 
