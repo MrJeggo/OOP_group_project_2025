@@ -22,6 +22,13 @@ class Miscellaneous(Item):
     def __init__(self, name, description):
         super().__init__(name, description)
 
+
+class Keys(Item):
+    def __init__(self, name, description, opens, open_message):
+        super().__init__(name, description)
+        self.opens=opens
+        self.open_message=open_message
+
 # here be items matey
 
 # weapons stored here
@@ -40,7 +47,7 @@ sharpend_pencil = Weapon("pencil","you dealt 15 damage better than 10",15,[],[])
 pencil_sharperner = Miscellaneous("pencil sharperner","everyone knows what a pencil sharperner does")
 
 # keys 
-# for keys write it this way for consitency  (room that the key opens)_key = Miscellaneous("(actual name here)",("you used (insert name here)"))
+# for keys write it this way for consitency  (room that the key opens)_key = Keys("(actual name here)",("you used (insert name here)","(room here)","write something funny"))
 
 
 # consumables
