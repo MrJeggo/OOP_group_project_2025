@@ -40,7 +40,7 @@ sharpend_pencil = Weapon("pencil","you dealt 15 damage better than 10",15,[],[])
 pencil_sharperner = Miscellaneous("pencil sharperner","everyone knows what a pencil sharperner does")
 
 # keys 
-
+# for keys write it this way for consitency  (room that the key opens)_key = Miscellaneous("(actual name here)",("you used (insert name here)"))
 
 
 # consumables
