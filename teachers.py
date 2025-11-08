@@ -1,6 +1,6 @@
 from player import Player
 class teacher: 
-    def __init__(self,name, maxhealth,attackdamage,subject):
+    def __init__(self,name, maxhealth,attackdamage,subject, stats):
         self._name = name
         self.health = maxhealth 
         self._maxhealth = maxhealth
