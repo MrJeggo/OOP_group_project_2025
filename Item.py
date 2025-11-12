@@ -54,6 +54,6 @@ pencil_sharperner = Miscellaneous("pencil sharperner","everyone knows what a pen
 
 popcorn = Consumable("pocorn kernal","you ate the kernal you gain 5 health",5)
 
-milk = Consumable("Milk","you drank the milk you gain 20 health")
+milk = Consumable("Milk","you drank the milk you gain 20 health", 20)
 
 apple = Consumable("apple","an apple a day just gave you 50 health",50)
