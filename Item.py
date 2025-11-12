@@ -34,6 +34,7 @@ class Keys(Item):
 # weapons stored here
 # Please add the effective against and ineffective against when you are adding the bosses
 
+
 pencil = Weapon("unsharpend pencil","you dealt 10 damage not great not terrible",10,[],[])
 
 calculator = Weapon("scientific calculator","you subtraced 13 health from your foes",13,[],[])
@@ -47,7 +48,7 @@ sharpend_pencil = Weapon("pencil","you dealt 15 damage better than 10",15,[],[])
 pencil_sharperner = Miscellaneous("pencil sharperner","everyone knows what a pencil sharperner does")
 
 # keys 
-# for keys write it this way for consitency  (room that the key opens)_key = Keys("(actual name here)",("you used (insert name here)","(room here)","write something funny"))
+
 
 
 # consumables
@@ -57,3 +58,4 @@ popcorn = Consumable("pocorn kernal","you ate the kernal you gain 5 health",5)
 milk = Consumable("Milk","you drank the milk you gain 20 health")
 
 apple = Consumable("apple","an apple a day just gave you 50 health",50)
+
