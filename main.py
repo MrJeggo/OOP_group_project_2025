@@ -6,17 +6,13 @@ import time
 import os
 import Item
 import Game
-import room
-import teachers
-import combat
-
+import player
 #ignore
 try:
     import msvcrt
     WINDOWS = True
 except ImportError:
     WINDOWS = False
-
 
 #type function, fast types stuff
 def faster_type_text(text, delay=0.0000001, chunk_size=6):
@@ -67,8 +63,6 @@ def show_intro():
     '''
 
     )
-
-
 def cinematic_intro():
     clear()
     faster_type_text("You wake up in the Phase 1 cafeteria.\n")
@@ -96,13 +90,17 @@ def cinematic_intro():
     faster_type_text("‘The teachers have been infected by a virus. They attack on sight. We need to stop them before it’s too late.’\n")
     wait_for_space()
     
-    faster_type_text("\nHe steps over Mati’s body without a glance.\n")
+    faster_type_text("\nHe steps over Mati’s body with a pitying glance.\n")
+    faster_type_text("‘Take this.’\n")
+
+    starter_weapon = Item.Weapon("unsharpened pencil", "Not great, not terrible.", 10)
+    player1.add_inventory(starter_weapon, 1)
+    #player1.equip("unsharpened pencil")
+
     faster_type_text("‘Come with me. There’s much to do.’\n")
-
-
-
-
 # Run sequence
+player1 = player.Player(sanity=100, max_sanity=100, confidence=0, inventory=[])
+
 show_intro()
 wait_for_space()
 cinematic_intro()
