@@ -1,6 +1,7 @@
 from Item import Weapon 
 from Item import Miscellaneous
 from Item import Consumable
+from teachers import Teacher
 
 class GameStuff:
     item = {"pencil": Weapon("unsharpend pencil","you dealt 10 damage not great not terrible",20,[],[]),
@@ -15,7 +16,13 @@ class GameStuff:
             "milk": Consumable("Milk","you drank the milk you gain 20 health",20),
             "apple": Consumable("apple","an apple a day just gave you 50 health",50)}
     
-    teacher = {}
+    teacher = {"Mr Autum": Teacher("Atum",60,10,"Physiks"),
+               "Mrs Vegedable": Teacher("Vegedable",100,15,"Chinese"),
+               "Mr L'Boo": Teacher("L'Boo",120, 20,"Buisness"),
+               "Mr Darken": Teacher("Darken",300,20,"Pricipal"),
+               "Mrs Chilly": Teacher("Chilly",500,25,"Math"),
+               "Mr Jeygo": Teacher("Jaygo",600,30,"CS"),
+              }
     room = {}
     def __init__(self, player):
         self.player = player      
