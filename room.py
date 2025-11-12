@@ -51,12 +51,4 @@ What to enter to get there: {dir[1]}''')
     
     def is_it_shop(self):
         return self.is_shop
-
-    def show_room(self):
-        if self.is_shop == True:
-            return f"This is the room {self.room_num} with {self.teacher_inside} standing inside. The room is a shop. "
-        
-    def selling_items(self):
-        # [['Pencil', '30'], ['Calculator', '50']]
-        #
-        pass 
+    
