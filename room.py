@@ -4,11 +4,12 @@ from Game import Game
 from Item import Item
 
 class Room():
-    def __init__(self, room_num, is_lock, room_direction, teacher_inside, room_descriptor, is_shop):
+    def __init__(self, room_num, is_lock, room_direction, teacher_inside, item_inside, room_descriptor, is_shop):
         self.room_num = room_num
         self.is_lock = is_lock
         self.room_direction = room_direction
         # self.teacher_inside = Teacher.teacher_inside
+        self.item_inside = Item.item_inside
         self.room_description = room_direction
         self.is_shop = is_shop
 
@@ -46,5 +47,3 @@ What to enter to get there: {dir[1]}''')
     def is_it_shop(self):
         return self.is_shop
     
-testroom=Room(44,False,'East',False,"test","a")
-print(testroom.room_description)
