@@ -92,14 +92,22 @@ def cinematic_intro():
     
     faster_type_text("\nHe steps over Mati’s body with a pitying glance.\n")
     faster_type_text("‘Take this.’\n")
-
-    starter_weapon = Item.Weapon("unsharpened pencil", "Not great, not terrible.", 10)
-    player1.add_inventory(starter_weapon, 1)
+    pencil = Game.GameStuff.item["pencil"]
+    player1.add_inventory(pencil, 1)
     #player1.equip("unsharpened pencil")
 
     faster_type_text("‘Come with me. There’s much to do.’\n")
+    wait_for_space()
 # Run sequence
 player1 = player.Player(sanity=100, max_sanity=100, confidence=0, inventory=[])
+def equip(player, item_name):
+    for entry in player.inventory:
+        if entry[0].name.lower() == item_name.lower():
+            player.equipped = entry[0]
+            print(f"Equipped {entry[0].name}.")
+            return
+    print("Item not found!")
+
 
 show_intro()
 wait_for_space()

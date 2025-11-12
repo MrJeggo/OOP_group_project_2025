@@ -4,6 +4,7 @@ class Player:
         self.confidence = confidence  
         self.inventory = inventory
         self.max_sanity = max_sanity
+        self.equipped = None
 
     def is_dead(self):
         if self.sanity > 1:
