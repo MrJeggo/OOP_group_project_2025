@@ -4,6 +4,11 @@
 import sys
 import time
 import os
+import Item
+import Game
+import room
+import teachers
+import combat
 
 #ignore
 try:
@@ -93,6 +98,7 @@ def cinematic_intro():
     
     faster_type_text("\nHe steps over Mati’s body without a glance.\n")
     faster_type_text("‘Come with me. There’s much to do.’\n")
+
 
 
 
